@@ -1,0 +1,1 @@
+[快速安装 Node.js 并初始化 Express 应用](http://www.jianshu.com/p/52760ba9d663)
