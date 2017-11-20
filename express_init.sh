@@ -36,3 +36,4 @@ echo "    script(src='/javascripts/jquery.min.js')" >> tmp
 echo "    script(src='/bootstrap/js/bootstrap.min.js')" >> tmp
 mv tmp app_server/views/layout.jade
 
+echo WebDev > .gitignore
