@@ -30,10 +30,6 @@ cat app_server/routes/index.js | sed 's/function(req, res, next) {/ctrlMain.inde
 mv tmp app_server/routes/index.js
 
 ## Adding Bootstrap to the template
-cat app_server/views/layout.jade |sed "s/head/head\n    meta(name='viewport', content='width=device-width, initial-scale=1.0')/" \
-| sed "s/= title/= title\n    link(rel='stylesheet', href='\/bootstrap\/css\/bootstrap.min.css')/" > tmp
-echo "    script(src='/javascripts/jquery.min.js')" >> tmp
-echo "    script(src='/bootstrap/js/bootstrap.min.js')" >> tmp
-mv tmp app_server/views/layout.jade
+cp WebDev/jade/layout.jquery app_server/views/layout.jade
 
 echo WebDev > .gitignore
