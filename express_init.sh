@@ -30,6 +30,6 @@ cat app_server/routes/index.js | sed 's/function(req, res, next) {/ctrlMain.inde
 mv tmp app_server/routes/index.js
 
 ## Adding Bootstrap to the template
-cp WebDev/jade/layout.jquery app_server/views/layout.jade
+cp WebDev/jade/* app_server/views/
 
 echo WebDev > .gitignore
