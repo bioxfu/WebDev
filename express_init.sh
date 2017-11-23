@@ -32,4 +32,11 @@ mv tmp app_server/routes/index.js
 ## Adding Bootstrap to the template
 cp WebDev/jade/* app_server/views/
 
+## Install Mongoose
+npm install --save mongoose
+cat app.js |sed "s/require('body-parser');/require('body-parser');\nrequire('.\/app_server\/models\/db');/" > tmp; mv tmp app.js
+
+## Adding Mongoose connection file and schema file
+cp WebDev/mongo/* app_server/models/
+
 echo WebDev > .gitignore
